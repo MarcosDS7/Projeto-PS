@@ -1,7 +1,7 @@
 @charset "utf-8";
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200&display=swap");
 /* font-family: 'Poppins', sans-serif; */
+
 *,
 html {
   padding: 0;
@@ -17,15 +17,17 @@ a {
   text-decoration: none;
   list-style: none;
 }
-
+/* Container padrão */
 .container {
   width: 1170px;
   margin: 0 auto;
   box-sizing: border-box;
 }
+/* Deixa o item do menu ativo */
 .active {
   color: #26748f !important;
 }
+/* Botões */
 .button_light {
   width: 200px;
   height: 45px;
@@ -52,6 +54,35 @@ a {
 
   transition: background linear 0.4s;
 }
+.button_dark {
+  width: 200px;
+  height: 45px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  background-color: #164352;
+  color: #fff;
+
+  border-radius: 5px;
+  transition: background linear 0.4s;
+}
+.button_dark:hover {
+  background: none;
+  border: 2px solid #164352;
+  color: #164352;
+
+  transition: background linear 0.4s;
+}
+/* ---------------------------------------------------------- */
+/* Traço em cima do título */
 .trace_light:before {
   display: block;
   content: "";
@@ -60,6 +91,15 @@ a {
   margin-bottom: 20px;
 
   background-color: #fff;
+}
+.trace_dark:before {
+  display: block;
+  content: "";
+  width: 80px;
+  height: 3px;
+  margin-bottom: 5px;
+
+  background-color: #164352;
 }
 /* ------------------------------------------------------------------------------------- */
 
@@ -122,10 +162,62 @@ a {
 .banner_content article {
   width: 600px;
 }
-.banner_content article p {
+.banner_content article h1 {
+  font-weight: 400;
   font-size: 28px;
   line-height: 34px;
   padding: 20px 0;
 
   color: #fff;
 }
+/* --------------------------------------------------- */
+
+.wallet {
+  width: 100%;
+  height: 400px;
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.wallet .wallet-content {
+  width: 840px;
+  height: 250px;
+
+  display: flex;
+  position: relative;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.wallet .wallet-content li {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wallet .wallet-content li:first-child {
+  padding: 0 15px;
+}
+.wallet .wallet-content li h3 {
+  font-weight: 400;
+  font-size: 28px;
+  color: #164352;
+}
+.wallet .wallet-content li p {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+
+  padding: 10px 0;
+}
+.wallet .wallet-content li img {
+  width: 100%;
+  height: 100%;
+}
+/* ------------------------------------------------ */
