@@ -242,7 +242,7 @@ a {
   padding: 0 20px;
   margin-bottom: 150px;
 
-  background-image: url("/img/bg_agendamento.png");
+  background-image: url("../img/bg_agendamento.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
