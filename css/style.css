@@ -140,6 +140,9 @@ a {
   color: #0009;
   transition: linear 0.2s;
 }
+.header nav ul li:last-child a {
+  padding-right: 0;
+}
 .header nav ul li a:hover {
   color: #26748f;
   transition: linear 0.2s;
@@ -299,3 +302,4 @@ a {
 .schedule ul li p span {
   color: #28a3cb;
 }
+/* ---------------------- */
