@@ -415,7 +415,6 @@ a {
   height: 20%;
 
   position: relative;
-  /* background: royalblue; */
 }
 .services ul li div img {
   width: 100%;
@@ -426,6 +425,7 @@ a {
   font-size: 14px;
   color: #000;
 }
-.services ul li p span{
-  color: #28A3CB;
+.services ul li p span {
+  color: #28a3cb;
 }
+/* ---------------------------- */
