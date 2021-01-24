@@ -497,7 +497,7 @@ a {
   align-items: center;
 
   padding: 0 20px;
-  margin-bottom: 150px;
+  margin-bottom: 70px;
 }
 .contact ul {
   width: 940px;
@@ -621,3 +621,94 @@ textarea {
   margin-top: 15px;
 }
 /* ------------------------------------------- */
+footer {
+  width: 100%;
+}
+footer .content_footer {
+  width: 100%;
+  height: 300px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #147bb2;
+  padding: 0 20px;
+  border-bottom: 1px solid#5FB7D5;
+}
+footer .content_footer ul {
+  position: relative;
+  width: 940px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .content_footer ul li {
+  width: 50%;
+  height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 15px;
+}
+footer .content_footer ul li h3 {
+  text-align: center;
+  border-bottom: 1px solid#5FB7D5;
+}
+footer .content_footer ul li h3 i {
+  font-weight: 300;
+  font-size: 28px;
+  color: #fff;
+}
+
+footer .content_footer ul li p i {
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+}
+
+footer .content_footer ul li div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer .content_footer ul li div a i {
+  display: block;
+  width: 120px;
+
+  margin-bottom: 10px;
+
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+  border-bottom: 1px solid#5FB7D5;
+  transition: transform linear 0.2s;
+}
+footer .content_footer ul li div a i:hover {
+  transition: transform linear 0.1s;
+  transform: scale(1.1, 1.1);
+}
+footer .copy {
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #147bb2;
+}
+
+footer .copy p {
+  font-weight: 100;
+  color: #fff;
+  font-size: 18px;
+}
+/* ---------------------------------------------- */
