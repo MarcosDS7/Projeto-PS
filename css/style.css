@@ -485,3 +485,139 @@ a {
 .who_we_are ul li p:nth-child(2) {
   margin-top: 20px;
 }
+/* ---------------------------------------- */
+
+.contact {
+  width: 100%;
+  height: 450px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 20px;
+  margin-bottom: 150px;
+}
+.contact ul {
+  width: 940px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contact ul li {
+  width: 50%;
+  height: 448px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 50px;
+
+  border-radius: 7px 0 0 7px;
+  background-color: #ebebeb;
+}
+.contact ul li:nth-child(2) {
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 0 7px 7px 0;
+
+  padding: 20px;
+}
+.contact ul li h3 {
+  font-weight: 400;
+  font-size: 28px;
+  color: #164352;
+}
+.contact ul li p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+.contact ul li div {
+  display: flex;
+  flex-direction: row;
+}
+.contact ul li div:nth-child(even) a:nth-child(2) {
+  padding: 0 10px;
+}
+.contact ul li div:nth-child(odd) {
+  display: flex;
+  flex-direction: column;
+}
+.contact ul li div:nth-child(odd) a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4e4e4e;
+  transition: color linear 0.1s;
+}
+.contact ul li div:nth-child(odd) a:hover {
+  color: #28a3cb;
+  transition: color linear 0.1s;
+}
+/* form */
+
+.contact ul li form {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contact ul li form div.align_input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact ul li form div.align_input:nth-child(1) {
+  margin-right: 5px;
+}
+.contact ul li form div.align_input:nth-child(2) {
+  margin-left: 5px;
+}
+.contact ul li form div.align_input_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.contact ul li form label {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4e4e4e;
+}
+.contact ul li form label span {
+  color: #f00;
+}
+
+.contact ul li form input,
+select,
+textarea {
+  width: 100%;
+  height: 45px;
+
+  padding: 5px 15px;
+
+  background-color: rgba(208, 213, 217, 0.3);
+  border-radius: 5px;
+  border: 1px solid #d0d5d9;
+
+  font-weight: 400;
+  font-size: 16px;
+  color: #4e4e4e;
+
+  resize: none;
+  outline: none;
+}
+.contact ul li form button {
+  outline: 0;
+  cursor: pointer;
+  border: none;
+  margin-top: 15px;
+}
+/* ------------------------------------------- */
