@@ -368,7 +368,6 @@ a {
   justify-content: center;
 
   padding: 0 20px;
-  margin-bottom: 150px;
 }
 
 .services h3 {
@@ -398,12 +397,17 @@ a {
 
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: transform linear 0.2s;
 }
 .services ul li:nth-child(2) {
   margin: 0 10px 0 20px;
 }
 .services ul li:nth-child(3) {
   margin: 0 20px 0 10px;
+}
+.services ul li:hover {
+  transition: transform linear 0.2s;
+  transform: scale(1.1, 1.1);
 }
 .services ul li h4 {
   font-weight: 400;
