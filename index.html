@@ -20,7 +20,7 @@
       <nav class="navbar-expand-md d-flex align-items-center justify-content-between">
 
         <div class="button_logo">
-          <button class="navbar-toggler shadow-none" type="button" onclick="openMenu()">
+          <button id="openMenu" class="navbar-toggler shadow-none" type="button">
             <img src="img/menu.svg" height="30px" alt="PS">
           </button>
 
@@ -32,10 +32,10 @@
         <div class="list">
           <div class="collapse navbar-collapse">
             <ul>
-              <li><a href="#" class="active">Home</a></li>
-              <li><a href="#">Serviços</a></li>
-              <li><a href="#">Quem somos</a></li>
-              <li><a href="#">Contato</a></li>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="#sv">Serviços</a></li>
+              <li><a href="#qs">Quem somos</a></li>
+              <li><a href="#ct">Contato</a></li>
             </ul>
           </div>
 
@@ -53,27 +53,27 @@
                       <span style="opacity:0.3;">|</span><a class="nav-link size-14 px-3 item_menu" href="#">Cadastrar</a>
                     </div>
                   </div>
-                  <button class="button_close" type="button" onclick="closeMenu()">
+                  <button id="closeMenu" class="button_close" type="button">
                     <span class="p-2" style="font-size: 1.3em;">&times;</span>
                   </button>
                 </div>
 
                 <div class="modal-body">
                   <ul class="navbar-nav ml-auto ">
-                    <li><a href="" class="active">Home</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Quem somos</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li class="py-1"><a href="index.html" class="active">Home</a></li>
+                    <li class="py-1"><a href="#sv" id="service">Serviços</a></li>
+                    <li class="py-1"><a href="#qs" id="WhoWeAre">Quem somos</a></li>
+                    <li class="py-1"><a href="#ct" id="contact">Contato</a></li>
                   </ul>
                 </div>
 
                 <div class="modal-footer-full-width  modal-footer d-flex flex-column align-items-start justify-content-center">
                   <div class="nav-item ml-3">
-                    <a class="nav-link size-14 item_menu" href="/">Ajuda</a>
+                    <a class="nav-link size-14 item_menu" href="#">Ajuda</a>
                   </div>
 
                   <div class="nav-item ml-3">
-                    <a class="nav-link size-14 item_menu" href="/Contact">Contato</a>
+                    <a class="nav-link size-14 item_menu" href="#">Denúncia</a>
                   </div>
                 </div>
               </div>
@@ -86,7 +86,7 @@
       <div class="container">
         <article>
           <h1 class="trace_light">Aqui você encontra soluções, dicas recomendações de saúde para toda família</h1>
-          <a href="" class="button_light">Começar</a>
+          <a href="#dc" class="button_light">Começar</a>
         </article>
       </div>
     </section>
@@ -139,7 +139,7 @@
       </ul>
     </section>
 
-    <section class="utility">
+    <section id="dc" class="utility">
       <h3 class="trace_dark">Utilidade pública</h3>
       <ul>
         <li>
@@ -152,7 +152,7 @@
       </ul>
     </section>
 
-    <section class="services">
+    <section id="sv" class="services">
       <h3 class="trace_dark">Serviços</h3>
       <ul>
         <li>
@@ -189,7 +189,7 @@
       </ul>
     </section>
 
-    <section class="who_we_are">
+    <section class="who_we_are" id="qs">
       <ul>
         <h3 class="trace_light">Quem somos</h3>
         <li>
@@ -200,7 +200,7 @@
       </ul>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="ct">
       <ul>
         <li>
           <h3 class="trace_dark">Contato</h3>
@@ -220,7 +220,7 @@
         </li>
 
         <li>
-          <form id="" action="" method="">
+          <form id="form" action="" method="">
             <label for="name">Nome <span>*</span></label>
             <input type="text" name="name" id="" />
 
@@ -253,7 +253,7 @@
             <label for="mensagem">mensagem <span>*</span></label>
             <textarea name="mensagem" id=""></textarea>
 
-            <button class="button_dark">Enviar</button>
+            <button type="submit" class="button_dark">Enviar</button>
           </form>
         </li>
       </ul>
@@ -272,10 +272,10 @@
         <li>
           <h3><i>Mapa do site</i></h3>
           <div>
-            <a href=""><i>HOME</i></a>
-            <a href=""><i>SERVIÇOS</i></a>
-            <a href=""><i>QUEM SOMOS</i></a>
-            <a href=""><i>CONTATO</i></a>
+            <a href="index.html"><i>HOME</i></a>
+            <a href="#sv"><i>SERVIÇOS</i></a>
+            <a href="#qs"><i>QUEM SOMOS</i></a>
+            <a href="#ct"><i>CONTATO</i></a>
           </div>
         </li>
       </ul>
