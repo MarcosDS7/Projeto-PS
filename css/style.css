@@ -13,13 +13,16 @@ html {
 }
 ul,
 ol,
-a {
+a,
+p {
   text-decoration: none;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 /* Container padrão */
 .container {
-  width: 960px;
+  width: 60rem;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -29,22 +32,22 @@ a {
 }
 /* Botões */
 .button_light {
-  width: 200px;
-  height: 45px;
+  width: 12.5rem;
+  height: 2.8rem;
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
 
   color: #fff;
-  border: 2px solid #fff;
-  border-radius: 5px;
+  border: 0.125rem solid #fff;
+  border-radius: 0.3125rem;
 
   transition: background linear 0.4s;
 }
@@ -56,15 +59,15 @@ a {
 }
 .button_dark {
   width: 100%;
-  max-width: 200px;
-  height: 45px;
+  max-width: 12.5rem;
+  height: 2.8rem;
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -72,15 +75,41 @@ a {
   background-color: #164352;
   color: #fff;
 
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   transition: background linear 0.4s;
 }
 .button_dark:hover {
   background: none;
-  border: 2px solid #164352;
+  border: 0.125rem solid #164352;
   color: #164352;
 
   transition: background linear 0.4s;
+}
+
+.button_close {
+  border: 0;
+  background: none;
+  color: #26748f;
+  font-size: 1.25rem;
+
+  outline: 0 !important;
+  border: none !important;
+}
+
+/* ------------------------------------------ */
+/* Items menu mobile  */
+.item_menu {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+
+  color: #26748f;
+  transition: linear 0.2s;
+}
+.item_menu:hover {
+  color: #26748f;
+  transition: linear 0.2s;
 }
 /* ---------------------------------------------------------- */
 /* Traço em cima do título */
@@ -88,62 +117,58 @@ a {
 .trace_light:before {
   display: block;
   content: "";
-  width: 80px;
-  height: 3px;
-  margin-bottom: 5px;
+  width: 5rem;
+  height: 0.1875rem;
+  margin-bottom: 0.3125rem;
 
   background-color: #fff;
 }
 .trace_dark:before {
   display: block;
   content: "";
-  width: 80px;
-  height: 3px;
-  margin-bottom: 5px;
+  width: 5rem;
+  height: 0.1875rem;
+  margin-bottom: 0.3125rem;
 
   background-color: #164352;
 }
 /* ------------------------------------------------------------------------------------- */
 
-.header {
+header {
   width: 100%;
-  height: 80px;
-  padding: 0 20px;
+  height: 5rem;
+  padding: 0 1.25rem;
 
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: center;
 
   background-color: #fff;
 }
 .container_header {
-  width: 960px;
+  width: 60rem;
   margin: 0 auto;
   box-sizing: border-box;
+}
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.header nav ul {
+header .container_header nav .list div ul {
   display: flex;
 }
-.header nav ul li a {
+header .container_header nav .list div ul li a {
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   letter-spacing: 0.1px;
   text-transform: uppercase;
 
-  padding: 10px;
+  padding: 0.625rem;
 
   color: #0009;
   transition: linear 0.2s;
 }
-.header nav ul li:last-child a {
+header .container_header nav .list div ul li:last-child a {
   padding-right: 0;
 }
-.header nav ul li a:hover {
+header .container_header nav .list div ul li a:hover {
   color: #26748f;
   transition: linear 0.2s;
 }
@@ -152,8 +177,8 @@ a {
 
 .banner_content {
   width: 100%;
-  height: 400px;
-  padding: 0 20px;
+  height: 25rem;
+  padding: 0 1.25rem;
 
   display: flex;
   flex-direction: row;
@@ -166,25 +191,25 @@ a {
   background-repeat: no-repeat;
 }
 .banner_content article {
-  width: 600px;
+  width: 37.5rem;
 }
 .banner_content article h1 {
   font-weight: 400;
-  font-size: 28px;
-  line-height: 34px;
-  padding: 20px 0;
+  font-size: 1.75rem;
+  line-height: 2.125rem;
+  padding: 1.25rem 0;
 
   color: #fff;
 }
 .banner_content article h1::before {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 /* --------------------------------------------------- */
 
 .wallet {
   width: 100%;
-  height: 400px;
-  padding: 0 20px;
+  height: 25rem;
+  padding: 0 1.25rem;
 
   display: flex;
   flex-direction: row;
@@ -192,12 +217,12 @@ a {
   align-items: center;
 }
 .wallet .wallet-content {
-  width: 840px;
-  height: 250px;
+  width: 52.5rem;
+  height: 15.625rem;
 
   display: flex;
   position: relative;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0rem 0rem 0.8333rem rgba(0, 0, 0, 0.2);
 }
 
 .wallet .wallet-content li {
@@ -210,20 +235,20 @@ a {
   align-items: center;
 }
 .wallet .wallet-content li:first-child {
-  padding: 0 15px;
+  padding: 0 0.9375rem;
 }
 .wallet .wallet-content li h3 {
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1.75rem;
   color: #164352;
 }
 .wallet .wallet-content li p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   color: #000;
 
-  padding: 10px 0;
+  padding: 0.625rem 0;
 }
 .wallet .wallet-content li img {
   width: 100%;
@@ -232,14 +257,14 @@ a {
 /* ------------------------------------------------ */
 .schedule {
   width: 100%;
-  height: 500px;
+  height: 31.25rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  padding: 0 20px;
+  padding: 0 1.25rem;
 
   background-image: url("../img/bg_agendamento.png");
   background-position: center;
@@ -248,11 +273,11 @@ a {
 }
 
 .schedule h3 {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 400;
   color: #fff;
 
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .schedule ul {
   width: 100%;
@@ -263,9 +288,9 @@ a {
   justify-content: center;
 }
 .schedule ul li {
-  width: 300px;
-  height: 350px;
-  padding: 30px 20px;
+  width: 18.75rem;
+  height: 21.875rem;
+  padding: 1.875rem 1.25rem;
 
   display: flex;
   flex-direction: column;
@@ -273,30 +298,30 @@ a {
   justify-content: space-between;
 
   background-color: #fff;
-  border-radius: 7px 0;
+  border-radius: 1.166rem 0;
 }
 .schedule ul li:nth-child(2) {
-  margin: 0 15px;
+  margin: 0 0.9375rem;
 }
 .schedule ul li h4 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   color: #000;
 
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 .schedule ul li article {
   display: flex;
   flex-direction: column;
 }
 .schedule ul li p {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: lighter;
 
   color: #164352;
 }
 .schedule ul li:first-child p:first-child {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .schedule ul li p span {
   color: #28a3cb;
@@ -304,21 +329,21 @@ a {
 /* ---------------------- */
 .utility {
   width: 100%;
-  height: 400px;
+  height: 25rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  padding: 0 20px;
+  padding: 0 1.25rem;
 }
 .utility h3 {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 400;
   color: #164352;
 
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .utility ul {
@@ -330,9 +355,9 @@ a {
   justify-content: center;
 }
 .utility ul li {
-  width: 960px;
-  height: 260px;
-  padding: 20px;
+  width: 60rem;
+  height: 16.25rem;
+  padding: 1.25rem;
 
   display: flex;
   flex-direction: row;
@@ -340,42 +365,42 @@ a {
   justify-content: space-between;
 
   background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.2);
 }
 .utility ul li article {
-  padding-right: 20px;
+  padding-right: 1.25rem;
 }
 .utility ul li article h4 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   color: #164352;
 
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 .utility ul li article p {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: #000;
 }
 /* ------------------------ */
 .services {
   width: 100%;
-  height: 450px;
+  height: 28.125rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  padding: 0 20px;
+  padding: 0 1.25rem;
 }
 
 .services h3 {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 400;
   color: #164352;
 
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .services ul {
   width: 100%;
@@ -386,9 +411,9 @@ a {
   justify-content: center;
 }
 .services ul li {
-  width: 220px;
-  height: 320px;
-  padding: 30px 20px;
+  width: 13.75rem;
+  height: 20rem;
+  padding: 1.875rem 1.25rem;
 
   display: flex;
   flex-direction: column;
@@ -396,14 +421,14 @@ a {
   justify-content: space-between;
 
   background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.3);
   transition: transform linear 0.2s;
 }
 .services ul li:nth-child(2) {
-  margin: 0 10px 0 20px;
+  margin: 0 0.625rem 0 1.25rem;
 }
 .services ul li:nth-child(3) {
-  margin: 0 20px 0 10px;
+  margin: 0 1.25rem 0 0.652rem;
 }
 .services ul li:hover {
   transition: transform linear 0.2s;
@@ -411,7 +436,7 @@ a {
 }
 .services ul li h4 {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #28a3cb;
 }
 .services ul li div {
@@ -426,7 +451,7 @@ a {
 }
 .services ul li p {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #000;
 }
 .services ul li p span {
@@ -436,24 +461,24 @@ a {
 .who_we_are {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 25rem;
 
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
 
-  margin: 30px 0 150px;
-  padding: 0 20px;
+  margin: 1.875rem 0 9.375rem;
+  padding: 0 1.25rem;
   background-color: #147bb2;
 }
 
 .who_we_are h3 {
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1.75rem;
   color: #fff;
 
-  margin-top: 60px;
+  margin-top: 3.75rem;
 }
 .who_we_are ul {
   width: 100%;
@@ -464,43 +489,43 @@ a {
   align-items: center;
 }
 .who_we_are li {
-  width: 600px;
-  height: 300px;
+  width: 37.5rem;
+  height: 18.75rem;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 
-  padding: 40px;
-  margin-top: 30px;
+  padding: 2.5rem;
+  margin-top: 1.875rem;
 
   background-color: #fff;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.2);
 }
 .who_we_are ul li p {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 .who_we_are ul li p:nth-child(2) {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 /* ---------------------------------------- */
 
 .contact {
   width: 100%;
-  height: 450px;
+  height: 28.125rem;
 
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 
-  padding: 0 20px;
-  margin-bottom: 70px;
+  padding: 0 1.25rem;
+  margin-bottom: 4.375rem;
 }
 .contact ul {
-  width: 940px;
+  width: 58.75rem;
 
   display: flex;
   flex-direction: row;
@@ -509,33 +534,33 @@ a {
 }
 .contact ul li {
   width: 50%;
-  height: 448px;
+  height: 28rem;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 
-  padding: 50px;
+  padding: 3.125rem;
 
-  border-radius: 7px 0 0 7px;
+  border-radius: 0.4375rem 0 0 0.4375rem;
   background-color: #ebebeb;
 }
 .contact ul li:nth-child(2) {
   background: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 0 7px 7px 0;
+  box-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.3);
+  border-radius: 0 0.4375rem 0.4375rem 0;
 
-  padding: 20px;
+  padding: 1.25rem;
 }
 .contact ul li h3 {
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1.75rem;
   color: #164352;
 }
 .contact ul li p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   color: #000;
 }
 .contact ul li div {
@@ -543,7 +568,7 @@ a {
   flex-direction: row;
 }
 .contact ul li div:nth-child(even) a:nth-child(2) {
-  padding: 0 10px;
+  padding: 0 0.625rem;
 }
 .contact ul li div:nth-child(odd) {
   display: flex;
@@ -551,7 +576,7 @@ a {
 }
 .contact ul li div:nth-child(odd) a {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   color: #4e4e4e;
   transition: color linear 0.1s;
 }
@@ -576,10 +601,10 @@ a {
   flex-direction: column;
 }
 .contact ul li form div.align_input:nth-child(1) {
-  margin-right: 5px;
+  margin-right: 0.3125rem;
 }
 .contact ul li form div.align_input:nth-child(2) {
-  margin-left: 5px;
+  margin-left: 0.3125rem;
 }
 .contact ul li form div.align_input_container {
   width: 100%;
@@ -588,7 +613,7 @@ a {
 }
 .contact ul li form label {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   color: #4e4e4e;
 }
 .contact ul li form label span {
@@ -599,16 +624,16 @@ a {
 select,
 textarea {
   width: 100%;
-  height: 45px;
+  height: 2.8125rem;
 
-  padding: 5px 15px;
+  padding: 0.3125rem 0.9375rem;
 
   background-color: rgba(208, 213, 217, 0.3);
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   border: 1px solid #d0d5d9;
 
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   color: #4e4e4e;
 
   resize: none;
@@ -618,7 +643,7 @@ textarea {
   outline: 0;
   cursor: pointer;
   border: none;
-  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
 /* ------------------------------------------- */
 footer {
@@ -626,7 +651,7 @@ footer {
 }
 footer .content_footer {
   width: 100%;
-  height: 300px;
+  height: 19.375rem;
 
   display: flex;
   flex-direction: row;
@@ -634,12 +659,12 @@ footer .content_footer {
   align-items: center;
 
   background-color: #147bb2;
-  padding: 0 20px;
+  padding: 0 1.25rem;
   border-bottom: 1px solid#5FB7D5;
 }
 footer .content_footer ul {
   position: relative;
-  width: 940px;
+  width: 58.75rem;
 
   display: flex;
   flex-direction: row;
@@ -648,13 +673,13 @@ footer .content_footer ul {
 }
 footer .content_footer ul li {
   width: 50%;
-  height: 250px;
+  height: 15.625rem;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  padding: 15px;
+  padding: 0.9375rem;
 }
 footer .content_footer ul li h3 {
   text-align: center;
@@ -662,13 +687,13 @@ footer .content_footer ul li h3 {
 }
 footer .content_footer ul li h3 i {
   font-weight: 300;
-  font-size: 28px;
+  font-size: 1.75rem;
   color: #fff;
 }
 
 footer .content_footer ul li p i {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1rem;
   color: #fff;
 }
 
@@ -681,12 +706,12 @@ footer .content_footer ul li div {
 }
 footer .content_footer ul li div a i {
   display: block;
-  width: 120px;
+  width: 7.5rem;
 
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1rem;
   color: #fff;
   border-bottom: 1px solid#5FB7D5;
   transition: transform linear 0.2s;
@@ -697,7 +722,7 @@ footer .content_footer ul li div a i:hover {
 }
 footer .copy {
   width: 100%;
-  height: 60px;
+  height: 3.75rem;
 
   display: flex;
   justify-content: center;
@@ -709,6 +734,20 @@ footer .copy {
 footer .copy p {
   font-weight: 100;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 /* ---------------------------------------------- */
+
+.modal-dialog-full-width {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: none !important;
+}
+
+.modal-content-full-width {
+  height: auto !important;
+  min-height: 100% !important;
+  border-radius: 0 !important;
+}

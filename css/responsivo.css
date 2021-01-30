@@ -1,0 +1,115 @@
+@media only screen and (min-width: 100px) {
+  .container {
+    max-width: none;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  header .container_header nav .button_logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner_content article {
+    width: auto;
+  }
+  .banner_content article h1 {
+    padding-right: 3.75rem;
+  }
+  /* --------------------------- */
+  .wallet {
+    height: 23.75rem;
+  }
+  .wallet .wallet-content {
+    width: auto;
+    max-width: 23.75rem;
+    display: flex;
+    flex-direction: column;
+    height: 18.75rem;
+  }
+
+  .wallet .wallet-content li {
+    width: 100%;
+    height: 100%;
+  }
+  .wallet .wallet-content li:first-child {
+    padding: 0.9375rem;
+  }
+  .wallet .wallet-content li h3 {
+    font-size: 1.5rem;
+  }
+  /* --------------------------------------- */
+  .schedule {
+    height: 81.25rem;
+    margin-top: 9.375rem;
+  }
+  .schedule ul {
+    flex-direction: column;
+  }
+  .schedule ul li:nth-child(2) {
+    margin: 1.25rem 0;
+  }
+  /* ------------------------------------- */
+  .utility {
+    margin-top: 9.375rem;
+  }
+  .utility ul li {
+    flex-direction: column;
+    width: 18.75rem;
+    height: auto;
+  }
+  .utility ul li article {
+    margin-bottom: 0.625rem;
+  }
+  /* --------------------------- */
+  .services {
+    height: 93.75rem;
+    margin-top: 6.25rem;
+  }
+
+  .services ul {
+    flex-direction: column;
+  }
+  .services ul li {
+    width: 18.75rem;
+  }
+  .services ul li:nth-child(2) {
+    margin: 1.25rem 0;
+  }
+  .services ul li:nth-child(3) {
+    margin: 0 0 1.25rem;
+  }
+  /* --------------------------- */
+  .who_we_are h3 {
+    margin-top: 2.5rem;
+  }
+
+  .who_we_are li {
+    width: 18.75rem;
+    height: 31.25rem;
+  }
+  /* ---------------------------------------- */
+
+  .contact {
+    margin: 30rem 0 16.25rem;
+  }
+  .contact ul {
+    width: 18.75rem;
+    flex-direction: column;
+  }
+  .contact ul li {
+    width: 100%;
+  }
+  /* ---------------------------------------- */
+  footer .content_footer {
+    width: 100%;
+    height: 32.5rem;
+  }
+  footer .content_footer ul {
+    flex-direction: column;
+  }
+  footer .content_footer ul li {
+    width: 100%;
+  }
+}
