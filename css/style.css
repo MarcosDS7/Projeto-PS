@@ -175,7 +175,10 @@ header .container_header nav .list div ul li a:hover {
   color: #26748f;
   transition: linear 0.2s;
 }
-
+/* ------------------------- */
+main {
+  padding-top: 4.6875rem;
+}
 /* ------------------------- */
 
 .banner_content {

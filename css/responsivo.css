@@ -16,6 +16,9 @@
     justify-content: space-between;
     align-items: center;
   }
+  main {
+    padding-top: 0;
+  }
   .banner_content article {
     width: auto;
   }
